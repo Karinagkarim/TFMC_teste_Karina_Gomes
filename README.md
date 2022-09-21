@@ -49,4 +49,29 @@ b) Estamos basicamente considerando os valores mais críticos entre as variávei
 CNQ_TFMC.ipynb
 Karinagkarim/TechnipFMC-test---Karina
 
+21/09/2022 Validação com o time
+
+1) Dentro do loop da combinação, substituir a ação de selecionar o maior peso entre as duas variáveis para obter o produto entre ambos os pesos. Assim, teremos a influência de ambas as variáveis. Ação pendente
+
+2) Chegamos à conslusão de que a variável TRL é mais um balizador para classificação do comportamento do modelo do que uma variável de influência que gera tomada de decisão, pois, não temos ação/controle sobre o nível de TRL que entra para testes no GOPI.
+
+Qualificação -> TRL 4 ou 5 | SIT -> TRL 6 ou 7
+
+Portanto, Dividiremos as segmentações dos resultados em 2 camadas de análise:
+
+Camada 1: Comportamento por nível de TRL Camada 2: Comportamento por família do produto dentro do nível de TRL
+
+Será necessário retirar o TRL do loop de combinações. Ação Pendente
+
+3) Entrarei em contato com Hugo Moacir e/ou Tomás Aquino para entender como o time de confiabilidade captura e processa os dados que indicam probabilidade de ocorrência de determinado desvio/causa. Ação Pendente
+
+4) Precisamos do banco de dados do SIT de LIZA e de Búzios & Marlim para rodar no modelo e verificar o comportamento. Ação Pendente - Michelle Trugilho
+
+5) Depois que esses dados rodarem no modelo, iremos comparar o comportamento da variável que mais se destacar criticamente dentro do universo de QN com a soma da combinação de outras variáveis que apresentam o produto com maior representatividade que a variável isolada.
+
+EX: QN xxxxx com custo de criticidade 5; QN yyyyyy com a.b=6 e c.a=8
+
+Qual a representatividade que o custo de a+b+c da QN yyyyyy tem em relação ao CNQ da QN xxxxxx?
+
+Ação pendente até a ação 4 ser finalizada
 
